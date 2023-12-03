@@ -17,7 +17,7 @@ def create_app() -> FastAPI:
         redoc_url=None if config.ENV == "production" else "/redoc",
     )
 
-    # init_provider()
+    init_provider()
     # init_routers(fastapi)
 
     print(f"\n💌💌💌FastAPI Config is '{config.ENV}'")
